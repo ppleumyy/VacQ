@@ -16,11 +16,11 @@ app.get('/', (req,res) => {
 });
 
 app.get('/api/v1/hospitals', (req,res) => {
-    res.status(200).json({success:trye, msg:'Shoq all hospitals'});
+    res.status(200).json({success:true, msg:'Show all hospitals'});
 });
 
 app.get('/api/v1/hospitals/:id', (req,res) => {
-    res.status(200).json({success:true, msg:'Shoq hospital ${req.params.id}'});
+    res.status(200).json({success:true, msg:'Show hospital ${req.params.id}'});
 });
 
 app.post('/api/v1/hospitals', (req,res) => {
